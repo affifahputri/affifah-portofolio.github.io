@@ -79,35 +79,84 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Tentang Saya */
+/* Styling untuk Section "Tentang Saya" */
 #about {
     text-align: center;
     padding: 80px 0;
+    background: #f9f3eb;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Styling Foto Profil */
 .profile-img {
-    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Proyek */
+.profile-img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Styling Container Foto Tambahan */
+.extra-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Styling untuk Kartu Foto */
+.info-card {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.8;
+}
+
+/* Animasi berbeda dengan proyek: slide-up */
+.info-card:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+/* Gambar dalam Kartu */
+.info-card img {
+    width: 100%;  /* Ikuti ukuran container */
+    aspect-ratio: 1 / 1; /* Jaga rasio 1:1 */
+    object-fit: cover;
+    max-width: 300px; /* Agar tidak terlalu besar */
+}
+
+
+/* Styling untuk Section Proyek */
 #projects {
     background: #f9f3eb;
     text-align: center;
     padding: 80px 0;
 }
 
+/* Agar judul tetap di atas */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px; /* Jarak ke bawah */
+}
+
+/* Grid agar proyek tampil dalam bentuk kolom */
 .project-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
+/* Styling untuk proyek */
 .project {
     width: 300px;
     padding: 20px;
@@ -119,6 +168,13 @@ header {
 .project:hover {
     transform: scale(1.05);
 }
+
+/* Gambar proyek */
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 /* Kontak */
 #contact {
