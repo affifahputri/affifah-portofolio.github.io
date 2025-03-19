@@ -13,4 +13,10 @@ document.addEventListener("DOMContentLoaded", function () ) {
                     observer.unobserve(entry.target);
                 }
             });
-        };
+        }; 
+         const observer = new IntersectionObserver(scrollAnimation, { threshold: 0.2 });
+        
+            sections.forEach((section) => {
+                gsap.set(section, { opacity: 0, y: 50 });
+                observer.observe(section);
+            });
