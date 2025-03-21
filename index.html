@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="lV83xNgx2yQhF0iJP3PMyc7CHHubsXBdlHT8Tgg-8KQ" />
     <title>Portofolio IPA</title>
     
     <!-- Google Fonts -->
@@ -14,18 +13,19 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@main/index.js"></script>
 </head>
 <body>
 
     <!-- Navbar -->
     <nav>
         <div class="container">
-            <h2 class="logo">affifahptrd</h2>
+            <h2 class="logo">IPA</h2>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Projek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><button class="theme-toggle"><i class="fas fa-moon"></i></button></li>
             </ul>
         </div>
     </nav>
@@ -34,8 +34,7 @@
     <header>
         <div class="container hero">
             <div class="hero-text">
-                <h1>Hey, I'm <span class="highlight">Affifah Putri Deza</span></h1>
-                <h2>Universitas Logistik Dan Bisnis<span class="highlight"> Internasional</span></h2>
+                <h1>Hi, Saya <span class="highlight">Affifah Putri Deza</span></h1>
                 <p>Mahasiswa D4 Teknik Informatika</p>
             </div>
             <div class="hero-image">
@@ -44,127 +43,37 @@
         </div>
     </header>
 
-   <!-- Tentang Saya -->
-<section id="about">
-    <div class="container about-section">
-        <h2 class="section-title">AboutMe</h2>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="img/ipa.jpg" alt="Foto Profil" class="profile-img">
-            </div>
-            <div class="about-text">
-                <p>Saya Affifah Putri Deza.</p>
-                <p>Saya merupakan Mahasiswa Universitas Logistik dan Bisnis Internasional</p>
-                <p>Saya sedang menempuh pendidikan D4 Teknik Informatika,</p>
-                <p>dan saya sangat tertarik dengan dunia teknologi dan editing.</p>
-                <p>Saya senang belajar hal baru dan mudah beradaptasi dengan orang lain.</p>
+    <!-- Tentang Saya -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p>Saya seorang mahasiswa yang tertarik dengan dunia teknologi dan editing.</p>
+        </div>
+    </section>
 
-            </div>
-        </div>
-    </div>
-
-    <!-- Foto dan Deskripsi Tambahan -->
-    <div class="extra-info">
-        <div class="info-card">
-            <img src="img/edit.png" alt="Foto 1">
-            <h3>Keahlian</h3>
-            <p>Saya memiliki kemampuan mengedit video dan desain grafis.</p>
-        </div>
-        <div class="info-card">
-            <img src="img/hobi.jpg" alt="Foto 2"> 
-            <h3>Hobi</h3>
-            <p>Saya sangat suka memasak.</p>
-        </div>
-        <div class="info-card">
-            <img src="img/me.jpg" alt="Foto 3">
-            <h3>Pengalaman</h3>
-            <p>Saya merupakan Duta Kampus Ulbi Angkatan 24.</p>
-        </div>
-    </div>
-
-    <!-- Soft Skills & Programming Languages -->
-<div class="skills-section">
-    <div class="skill-card">
-        <h3>Soft Skills</h3>
-        <ul>
-            <li><i class="fas fa-comments"></i> Komunikasi</li>
-            <li><i class="fas fa-users"></i> Kerja Sama Tim</li>
-            <li><i class="fas fa-tasks"></i> Gampang Beradaptasi</li>
-        </ul>        
-    </div>
-    <div class="skill-card">
-        <h3>Bahasa Pemrograman</h3>
-        <div class="programming-icons">
-            <img src="img/HTML.jpeg" alt="HTML">
-            <img src="img/CSS.jpeg"CSS">
-        </div>
-    </div>
-</div>
-
-    <!-- Bukti Soft Skill -->
-<div class="soft-skill-proof">
-    <h3>Soft Skill</h3>
-    <div class="proof-gallery">
-        <div class="proof-card">
-            <img src="img/quu.jpg" alt="Public Speaking">
-            <p>Public Speaking</p>
-        </div>
-        <div class="proof-card">
-            <img src="img/klpk.jpg" alt="Teamwork">
-            <p>Teamwork</p>
-        </div>
-        <div class="proof-card">
-            <img src="img/adapt.jpg" alt="Adaptability">
-            <p>Adaptability</p>
-        </div>
-    </div>
-</div>
-</section>
-
-   <!-- Proyek -->
-<section id="projects">
-    <div class="container">
-        <h1 class="section-title">Projects</h1> <!-- Pastikan judul ada di atas -->
-        <div class="project-grid">
+    <!-- Projek -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projek</h2>
             <div class="project">
-                <img src="img/1.png" alt="Proyek 1" class="project-img">
-                <h3>Proyek 1</h3>
+                <img src="img/1.png" alt="Proyek 1">
                 <p>Membuat Game pada Alice 3.</p>
             </div>
             <div class="project">
-                <img src="img/2.png" alt="Proyek 2" class="project-img">
-                <h3>Proyek 2</h3>
-                <p>Membuat Webite kedai kopi.</p>
-            </div>
-            <div class="project">
-                <img src="img/3.png" alt="Proyek 3" class="project-img">
-                <h3>Proyek 3</h3>
-                <p>Membuat game dengan Greenfoot.</p> 
-            </div>
-            <div class="project">
-                <img src="img/4.png" alt="Proyek 4" class="project-img">
-                <h3>Proyek 4</h3>
-                <p>Membuat Podcast di Spotify.</p>
-            </div>
-            <div class="project">
-                <img src="img/5.png" alt="Proyek 5" class="project-img">
-                <h3>Proyek 5</h3>
-                <p>Melakukan Podcast dan Up ke Youtube.</p>
+                <img src="img/2.png" alt="Proyek 2">
+                <p>Membuat Website Kedai Kopi.</p>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Kontak -->
     <section id="contact">
-        <div class="container contact-section">
-            <h2 class="section-title">Contact</h2>
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
             <div class="social-icons">
-                    <a href="mailto:affifahputrideza20@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/affifahputri" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/affifah.ptrd?igsh=ZDZuZzEzZHQ2anJm" target="_blank"><i class="fab fa-instagram"></i></a>
-                
+                <a href="mailto:affifahputrideza20@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/affifahputri"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/affifah.ptrd"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -174,5 +83,7 @@
         <p>&copy; 2025 IPA. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
