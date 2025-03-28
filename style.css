@@ -370,4 +370,90 @@ footer {
         width: 150px;
         height: 150px;
     }
+/* RESPONSIVE UNTUK TABLET (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 90%;
+    }
+
+    .hero-image img, .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .extra-info, .skills-section, .proof-gallery, .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card, .skill-card, .proof-card, .project {
+        width: 90%;
+    }
+}
+
+/* RESPONSIVE UNTUK HP (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan navbar di HP */
+    }
+
+    /* Tombol Menu (Hamburger) */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        color: #a67c52;
+    }
+
+    /* Navbar yang muncul saat tombol ditekan */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active li {
+        padding: 15px;
+    }
+}
+
 }
