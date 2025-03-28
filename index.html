@@ -177,5 +177,14 @@
         <p>&copy; 2025 IPA. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
 </body>
 </html>
